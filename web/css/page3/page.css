@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+* {
+	font-family: "Microsoft YaHei" !important;
+}
+
+/*
+*	HEADER & BODY & FOOTER
+*/
+header {
+	background-image: url(/ekgDemo/img/tweed.png);
+	background-repeat: repeat;
+	margin-bottom:15px;
+}
+
+header p {
+	color: #FFF;
+	margin-bottom: 20px;
+}
+
+header h1 {
+	color: #FFF;
+	font-weight: bolder;
+	margin: 20px 0 5px 0;
+}
+
+body {
+	background-image: url(/ekgDemo/img/groovepaper.png);
+}
+
+footer {
+	height: 100px;
+	background-image: url(/ekgDemo/img/tweed.png);
+	background-repeat: repeat;
+	font-size: 14px;
+	color: #CCC;
+	text-align: center;
+	padding-top: 15px;
+	margin-top: 15px;
+}
+
+.chart-content{
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+.productIntro{
+	padding: 15px;
+	padding-bottom : 5px;
+}
+
+.productIntro p {
+	font-weight: bolder;
+}
+
+.productIntro h4 {
+	font-weight: bolder;
+}

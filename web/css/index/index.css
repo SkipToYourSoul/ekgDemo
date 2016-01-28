@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+/*
+*	HEADER & BODY & FOOTER
+*/
+header {
+	margin-bottom:25px;
+	margin-top: 20px;
+	height: 100px;
+}
+
+h5{
+	color: grey;
+	font-weight: bolder;
+}
+
+h1 {
+	font-weight: bolder;
+	margin: 20px 0 5px 0;
+}
+
+body {
+	background-image: url(/ekgDemo/img/groovepaper.png);
+	text-align: center;
+	min-height: 500px;
+}
+
+footer {
+	padding: 10px 0;
+  	margin-bottom:10px;
+	margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width:100%
+  }
+}
+
+.searchlogo{
+	font-size: 60px;
+}
+
+.searchdetail{
+	margin-bottom: 60px;
+	font-size: 20px;
+}
+
+.indexInput{
+	margin-bottom:20px;
+	height:45px;
+	width:600px;
+	border-radius: 4px;
+}
+
+.indexSearch{
+	/* border-style: solid; 
+	border-width: 1px;
+	border-color: #a9a9a9;  */
+	border-radius: 10px;
+	height:225px;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	text-align:left;
+}
+
+.indexbtn{
+	margin-left:10px;
+	margin-right:10px;
+}

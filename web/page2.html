@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>基于海量Web数据的商业舆情系统——企业画像</title>
+	
+	<!-- link the css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/page2/page.css" rel="stylesheet">
+    
+</head>
+<body>
+	<!-- HEADER -->
+    <header style="min-width:1100px">
+        <div class="container">
+            <h1>基于海量Web数据的商业舆情系统——企业画像</h1>
+            <p id="currentCheck">数据加载中...</p>
+        </div>
+    </header>
+    
+    <!-- MAIN -->
+    <div class="container" style="min-width:1100px">
+        <!-- CONTAINER -->
+        <div class="row" style="min-width:1100px">
+          	<div class="span3" style="width:270px">
+          		<h4 style="color: grey; font-weight: bolder;">公司列表</h4>
+          		<hr>
+        		<div id="companyList" class="companylist pre-scrollable">
+        			<h4>数据加载中...</h4>
+        		</div>
+        		<div style="margin-top:20px">
+        			<a class="btn btn-info btn-block" href="index.html">回到主页</a>
+        			<a class="btn btn-warning btn-block" href="page3.html">产业带页面</a>
+        		</div>
+        	</div>
+        	<div id="companyTab" class="span8" style="width:770px">
+        		<!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-justified" id="tabul">
+                    <li class="active"><a id="a_panel1" href="#tabContent" data-toggle="tab">企业基本信息</a></li>
+					<li><a id="a_panel2" href="#tabContent" data-toggle="tab">企业关系</a></li>
+					<li><a id="a_panel3" href="#tabContent" data-toggle="tab">企业时间线</a></li>
+					<li><a id="a_panel4" href="#tabContent" data-toggle="tab">社交舆情</a></li>
+					<li><a id="a_panel5" href="#tabContent" data-toggle="tab">社交关系</a></li>
+                </ul>
+				<div style="min-height:768px" class="tab-content" id="tabContent">
+					<h2>数据加载中...</h2>
+				</div>
+        	</div>
+        </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="myModalLabel">微博转播过程</h4>
+				</div>
+				<div class="modal-body">
+					<div id="retweetContent"></div><hr>
+					<div id="retweetChart" style="width:570px;height:500px"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+    <footer style="min-width:1100px">
+      	Made by <a href="http://database.ecnu.edu.cn/">Center for Cloud Computing and Big Data </a>.
+		<p>&copy; Company 2015</p>
+      	<p><a href="http://echarts.baidu.com" target="_blank">Data Visualization by ECharts</a></p>
+    </footer>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/global/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/global/bootstrap.min.js"></script>
+	<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+	
+	<script type="text/javascript" src="js/global/parseurl.js"></script>
+	<script type="text/javascript" src="js/global/server.js"></script>
+	
+	<script type="text/javascript" src="js/page2/sigmal/Graph&Comm.js"></script>
+	<script type="text/javascript" src="js/page2/sigmal/socialRelation.js"></script>
+	<script type="text/javascript" src="js/page2/sigmal/sigma.min.js"></script>
+	<script type="text/javascript" src="js/page2/sigmal/sigma.forceatlas2.js"></script>
+	<!--<script type="text/javascript" src="js/page2/d3/d3.js"></script>
+	<script type="text/javascript" src="js/page2/d3/d3.layout.cloud.js"></script>-->
+	
+	<script type="text/javascript" src="js/page2/tab1.js"></script>
+	<script type="text/javascript" src="js/page2/tab2.js"></script>
+	<script type="text/javascript" src="js/page2/tab3.js"></script>
+	<script type="text/javascript" src="js/page2/tab4.js"></script>
+	<script type="text/javascript" src="js/page2/tab4_retweet&cloud.js"></script>
+	<script type="text/javascript" src="js/page2/tab5.js"></script>
+	<script type="text/javascript" src="js/page2/option.js"></script>
+	<script type="text/javascript" src="js/page2/main.js"></script>
+</body>
+</html>
